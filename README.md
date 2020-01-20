@@ -46,36 +46,25 @@ The value of this app to its user will be having a hassle-free app, that can be 
 ## Traversing the App:
 
 The user will begin by starting up the app, and being shown the splash screen for the game.
-![Image of SplashScreen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Achievments.png)
+![Image of SplashScreen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/splash.png)
 
 After the splash screen is finished the player will be shown the Main Menu of the game, which will lead off to any other area of the app.
-
+![Image of Main Menu](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/mainscreen.png)
 
 
 From the main Menu, a user at this point, based on their priorities, will either check the shop for new items, the leaderboards to check the change in the standings, or achievements to see what else they still need to accomplish.
-
-
-
-
-
-
+![Image of Item Store](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/store.png)
+![Image of Leaderboard](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Leaderboard.png)
+![Image of Achievments](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Achievments.png)
 From this point the user will either check the remaining screens above, or will move on to start their next game.
 
-
-
+![Image of In Game Screen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/InGameScreen.png)
 Once the user completes their match, they will be presented with the results screen, which will allow them to see their results and from this screen they can go back to either the Shop, Leaderboards, Achievements, or Main menu.
-
-
+![Image of Game Over](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Results.png)
 
 At this point the process will repeat, or the user will quit the game until another time.
 
-
-
-
-
-
-
 ## Use Case Diagram:
-
+![Image of Use Case Diagram](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/UseCaseDiagram.png)
 
 
