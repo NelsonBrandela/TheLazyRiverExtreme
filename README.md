@@ -1,8 +1,6 @@
 # TheLazyRiverExtreme
 IOS game being developed throughout the term
 
-GDD for Lazy River Extreme(Theme in Progress)
-
 ## Purpose:
 
 The purpose of this assignment will be to provide a mobile title for iOS, that will allow users to enjoy a never ending progression within a reaction based game both offline, and online with leaderboards to brag to your friends.
