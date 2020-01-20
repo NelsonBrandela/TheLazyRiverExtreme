@@ -55,17 +55,17 @@ After the splash screen is finished the player will be shown the Main Menu of th
 
 
 From the main Menu, a user at this point, based on their priorities, will either check the shop for new items, the leaderboards to check the change in the standings, or achievements to see what else they still need to accomplish.
-<div>
+
 ![Image of Item Store](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/store.png)
-</div>
 
-<div>
+<dl>
+
 ![Image of Leaderboard](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Leaderboard.png)
-</div>div>
+</dl>
 
-<div>
+
 ![Image of Achievments](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Achievments.png)
-</div>
+
 From this point the user will either check the remaining screens above, or will move on to start their next game.
 
 ![Image of In Game Screen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/InGameScreen.png)
