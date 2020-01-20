@@ -58,11 +58,11 @@ From the main Menu, a user at this point, based on their priorities, will either
 <br>
 ![Image of Item Store](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/store.png)
 
-<br>
+</br>
 ![Image of Leaderboard](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Leaderboard.png)
 <br>
 ![Image of Achievments](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Achievments.png)
-<br>
+</br>
 From this point the user will either check the remaining screens above, or will move on to start their next game.
 
 ![Image of In Game Screen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/InGameScreen.png)
