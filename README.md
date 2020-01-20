@@ -46,7 +46,7 @@ The value of this app to its user will be having a hassle-free app, that can be 
 ## Traversing the App:
 
 The user will begin by starting up the app, and being shown the splash screen for the game.
-
+![Image of SplashScreen](https://github.com/NelsonBrandela/TheLazyRiverExtreme/blob/master/Images/Achievments.png)
 
 After the splash screen is finished the player will be shown the Main Menu of the game, which will lead off to any other area of the app.
 
@@ -75,16 +75,7 @@ At this point the process will repeat, or the user will quit the game until anot
 
 
 
-
-
-
-
-
-
-
-
-
-#Use Case Diagram:
+## Use Case Diagram:
 
 
 
