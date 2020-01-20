@@ -3,46 +3,47 @@ IOS game being developed throughout the term
 
 GDD for Lazy River Extreme(Theme in Progress)
 
-#Purpose:
+## Purpose:
 
 The purpose of this assignment will be to provide a mobile title for iOS, that will allow users to enjoy a never ending progression within a reaction based game both offline, and online with leaderboards to brag to your friends.
 
-#Features:
+## Features:
 
 This game will support various features from the iOS suite of supported systems.
 
-#MotionControls:
+## MotionControls:
 
 The game will have a toggleable setting to enable motion controls for playing the game. If the user would prefer to rotate their device to move their character versus the on screen buttons, it will be available.
 
-#iCloud:
+## iCloud:
 
 The game will make use of the iCloud service to give players a remote location to save their game information, for easy access of the same save from multiple devices, or to give them a way to restore their data should it be lost.
 
-#Push Notifications:
+## Push Notifications:
 
 The game will make use of push notifications if allowed by the user, in order to inform them of updates to the game, new available items, or changes to the available stock of inventory. It may also make use of push notifications to make users remember to play the game.
 
-#Achievements:
+## Achievements:
 
 The game will make use of an achievement system so that players can track their own progress, and have personal goals to strive for while playing the game.
 
-#LeaderBoards:
+## LeaderBoards:
 
 The game will utilise leaderboards in order to give players a competitive goal to strive for against their friends or other players worldwide. It will give a second form of goals that are independent of the available achievements to collect.
 
-#Analytics:
+# Analytics:
 
 The game will make use of analytics if permitted in order to check user engagement, and which features of the game are the most desired and utilised. This will be used in order to get a better understanding of our playerbase, and tailor new content to the masses.
-Ads Supported:
+
+## Ads Supported:
 
 The game will have ads within certain areas of the game, depending on the upfront charge, and the average cost and use of the premium in game store. Ads will try to be as unobstructive as possible, in an attempt to keep from interrupting player engagement.
 
-#Value:
+## Value:
 
 The value of this app to its user will be having a hassle-free app, that can be enjoyed both with or without a connection to the internet. It will provide them with a never ending challenge that they can continually improve on, during any free time that they have. Whether it be commuting, or while using the facilities, the game will be available for them to enjoy at their leisure.
 
-#Traversing the App:
+## Traversing the App:
 
 The user will begin by starting up the app, and being shown the splash screen for the game.
 
