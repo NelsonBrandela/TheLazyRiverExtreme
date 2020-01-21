@@ -13,9 +13,9 @@ This game will support various features from the iOS suite of supported systems.
 
 The game will have a toggleable setting to enable motion controls for playing the game. If the user would prefer to rotate their device to move their character versus the on screen buttons, it will be available.
 
-## iCloud:
+## cloud storage:
 
-The game will make use of the iCloud service to give players a remote location to save their game information, for easy access of the same save from multiple devices, or to give them a way to restore their data should it be lost.
+The game will feature a remote server based cloud storage in order to keep player data saved so that it may be loaded from any device following proper login credentials.
 
 ## Push Notifications:
 
