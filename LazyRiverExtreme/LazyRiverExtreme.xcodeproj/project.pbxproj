@@ -16,7 +16,6 @@
 		2DDD32A023D7C0B80033011E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD329F23D7C0B80033011E /* Assets.xcassets */; };
 		2DDD32A323D7C0B80033011E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD32A123D7C0B80033011E /* LaunchScreen.storyboard */; };
 		2DDD32AB23D7C2D60033011E /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32AA23D7C2D60033011E /* FIRAnalyticsConnector.framework */; };
-		2DDD32AD23D7C2E70033011E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32AC23D7C2E70033011E /* FirebaseAnalytics.framework */; };
 		2DDD32AF23D7C2F00033011E /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32AE23D7C2F00033011E /* FirebaseCore.framework */; };
 		2DDD32B123D7C2F80033011E /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32B023D7C2F80033011E /* FirebaseCoreDiagnostics.framework */; };
 		2DDD32B323D7C3100033011E /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32B223D7C3100033011E /* FirebaseInstanceID.framework */; };
@@ -27,6 +26,8 @@
 		2DDD32BD23D7C3300033011E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32BC23D7C3300033011E /* nanopb.framework */; };
 		2DDD32BF23D7C3AA0033011E /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32BE23D7C3AA0033011E /* FirebaseDatabase.framework */; };
 		2DDD32C123D7C3B00033011E /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C023D7C3B00033011E /* leveldb-library.framework */; };
+		2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */; };
+		2DDD32CA23D7D5670033011E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD32C923D7D5670033011E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,6 @@
 		2DDD32A223D7C0B80033011E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DDD32A423D7C0B80033011E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DDD32AA23D7C2D60033011E /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
-		2DDD32AC23D7C2E70033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2DDD32AE23D7C2F00033011E /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		2DDD32B023D7C2F80033011E /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		2DDD32B223D7C3100033011E /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
@@ -52,6 +52,10 @@
 		2DDD32BC23D7C3300033011E /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		2DDD32BE23D7C3AA0033011E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
 		2DDD32C023D7C3B00033011E /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		2DDD32C423D7C6C60033011E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/module.modulemap; sourceTree = "<absolute>"; };
+		2DDD32C523D7C7900033011E /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = ../../../../Downloads/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		2DDD32C923D7D5670033011E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DDD32BB23D7C3290033011E /* GoogleUtilities.framework in Frameworks */,
-				2DDD32AD23D7C2E70033011E /* FirebaseAnalytics.framework in Frameworks */,
-				2DDD32BD23D7C3300033011E /* nanopb.framework in Frameworks */,
+				2DDD32AF23D7C2F00033011E /* FirebaseCore.framework in Frameworks */,
 				2DDD32B123D7C2F80033011E /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */,
+				2DDD32BB23D7C3290033011E /* GoogleUtilities.framework in Frameworks */,
+				2DDD32BD23D7C3300033011E /* nanopb.framework in Frameworks */,
 				2DDD32B523D7C3170033011E /* GoogleAppMeasurement.framework in Frameworks */,
 				2DDD32C123D7C3B00033011E /* leveldb-library.framework in Frameworks */,
 				2DDD32B723D7C31D0033011E /* GoogleDataTransport.framework in Frameworks */,
@@ -70,7 +75,6 @@
 				2DDD32AB23D7C2D60033011E /* FIRAnalyticsConnector.framework in Frameworks */,
 				2DDD32BF23D7C3AA0033011E /* FirebaseDatabase.framework in Frameworks */,
 				2DDD32B923D7C3230033011E /* GoogleDataTransportCCTSupport.framework in Frameworks */,
-				2DDD32AF23D7C2F00033011E /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +84,10 @@
 		2DDD328623D7C0B70033011E = {
 			isa = PBXGroup;
 			children = (
+				2DDD32C623D7CC9C0033011E /* Firebase */,
 				2DDD329123D7C0B70033011E /* LazyRiverExtreme */,
 				2DDD329023D7C0B70033011E /* Products */,
+				2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */,
 				2DDD32C023D7C3B00033011E /* leveldb-library.framework */,
 				2DDD32BE23D7C3AA0033011E /* FirebaseDatabase.framework */,
 				2DDD32BC23D7C3300033011E /* nanopb.framework */,
@@ -92,7 +98,6 @@
 				2DDD32B223D7C3100033011E /* FirebaseInstanceID.framework */,
 				2DDD32B023D7C2F80033011E /* FirebaseCoreDiagnostics.framework */,
 				2DDD32AE23D7C2F00033011E /* FirebaseCore.framework */,
-				2DDD32AC23D7C2E70033011E /* FirebaseAnalytics.framework */,
 				2DDD32AA23D7C2D60033011E /* FIRAnalyticsConnector.framework */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 		2DDD329123D7C0B70033011E /* LazyRiverExtreme */ = {
 			isa = PBXGroup;
 			children = (
+				2DDD32C923D7D5670033011E /* GoogleService-Info.plist */,
 				2DDD329223D7C0B70033011E /* AppDelegate.swift */,
 				2DDD329423D7C0B70033011E /* GameScene.sks */,
 				2DDD329623D7C0B70033011E /* Actions.sks */,
@@ -119,6 +125,15 @@
 				2DDD32A423D7C0B80033011E /* Info.plist */,
 			);
 			path = LazyRiverExtreme;
+			sourceTree = "<group>";
+		};
+		2DDD32C623D7CC9C0033011E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				2DDD32C423D7C6C60033011E /* module.modulemap */,
+				2DDD32C523D7C7900033011E /* Firebase.h */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +199,7 @@
 				2DDD32A023D7C0B80033011E /* Assets.xcassets in Resources */,
 				2DDD32A323D7C0B80033011E /* LaunchScreen.storyboard in Resources */,
 				2DDD329723D7C0B70033011E /* Actions.sks in Resources */,
+				2DDD32CA23D7D5670033011E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +241,7 @@
 		2DDD32A523D7C0B80033011E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -257,6 +273,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ArkedGames;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -277,16 +294,21 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Debug;
 		};
 		2DDD32A623D7C0B80033011E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -318,6 +340,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ArkedGames;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -331,9 +354,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -343,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -356,6 +385,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Debug;
 		};
@@ -364,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -377,6 +408,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Release;
 		};
