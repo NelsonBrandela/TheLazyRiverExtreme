@@ -29,6 +29,7 @@
 		2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */; };
 		2DDD32CA23D7D5670033011E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD32C923D7D5670033011E /* GoogleService-Info.plist */; };
 		51D1408B23F371FD008F549D /* ITimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1408A23F371FD008F549D /* ITimer.swift */; };
+		625A7AAD23F9B5F80028F55C /* ScoringSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = ../../../../Downloads/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2DDD32C923D7D5670033011E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		51D1408A23F371FD008F549D /* ITimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITimer.swift; sourceTree = "<group>"; };
+		625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				51D1408A23F371FD008F549D /* ITimer.swift */,
+				625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */,
 			);
 			path = NM_BasicSystems;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				2DDD329923D7C0B70033011E /* GameScene.swift in Sources */,
 				51D1408B23F371FD008F549D /* ITimer.swift in Sources */,
+				625A7AAD23F9B5F80028F55C /* ScoringSystem.swift in Sources */,
 				2DDD329B23D7C0B70033011E /* GameViewController.swift in Sources */,
 				2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */,
 			);
