@@ -15,9 +15,9 @@ class ScoringSystem
     private var scoreMultiplier: Int = 1
     
     //Point gain specific variables
-    var killScore: Int
-    var distanceScore: Int
-    var timeScore: Int
+    var killScore = 0
+    var distanceScore = 0
+    var timeScore = 0
     var pointsPerKill: Int
     var pointsPerDistanceMetric: Int
     var pointsPerTimeScale: Int

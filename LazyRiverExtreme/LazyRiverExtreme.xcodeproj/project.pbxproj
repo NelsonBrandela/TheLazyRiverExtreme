@@ -62,7 +62,7 @@
 		2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = ../../../../Downloads/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2DDD32C923D7D5670033011E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2DFF548523F6121D009C4332 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
-    51D1408A23F371FD008F549D /* ITimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITimer.swift; sourceTree = "<group>"; };
+		51D1408A23F371FD008F549D /* ITimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITimer.swift; sourceTree = "<group>"; };
 		625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +89,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5ACA7723FCB148001F9A50 /* PlayerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2DFF548523F6121D009C4332 /* Ability.swift */,
+				2D9B484623F350AF00A91A9C /* PlayerData.swift */,
+				2D9B484423F34A7600A91A9C /* Player.swift */,
+			);
+			path = PlayerClasses;
+			sourceTree = "<group>";
+		};
 		2DDD328623D7C0B70033011E = {
 			isa = PBXGroup;
 			children = (
+				2D5ACA7723FCB148001F9A50 /* PlayerClasses */,
 				2DDD32C623D7CC9C0033011E /* Firebase */,
 				2DDD329123D7C0B70033011E /* LazyRiverExtreme */,
 				2DDD329023D7C0B70033011E /* Products */,
@@ -131,9 +142,6 @@
 				2DDD329F23D7C0B80033011E /* Assets.xcassets */,
 				2DDD32A123D7C0B80033011E /* LaunchScreen.storyboard */,
 				2DDD32A423D7C0B80033011E /* Info.plist */,
-				2D9B484423F34A7600A91A9C /* Player.swift */,
-				2D9B484623F350AF00A91A9C /* PlayerData.swift */,
-				2DFF548523F6121D009C4332 /* Ability.swift */,
 			);
 			path = LazyRiverExtreme;
 			sourceTree = "<group>";
