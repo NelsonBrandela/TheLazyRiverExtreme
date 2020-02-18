@@ -64,7 +64,7 @@ class Player {
         let directiony = endingPoint.y - sprite.position.y
         let mag = sqrt((directionx * directionx) + (directiony * directiony))
        
-        let move = SKAction.move(to:endingPoint, duration: Double(mag) / 200)
+        let move = SKAction.move(to:endingPoint, duration: Double(mag) / (200 * Double(speed)))
         
         sprite.removeAction(forKey: lastAnimation)
         
@@ -77,7 +77,7 @@ class Player {
         let directiony = startingPoint.y - sprite.position.y
         let mag = sqrt((directionx * directionx) + (directiony * directiony))
        
-        let reset = SKAction.move(to:startingPoint, duration: Double(mag) / 200)
+        let reset = SKAction.move(to:startingPoint, duration: Double(mag) / (200 * Double(speed)))
         
         sprite.removeAction(forKey: lastAnimation)
         
