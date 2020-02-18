@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9B484523F34A7600A91A9C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B484423F34A7600A91A9C /* Player.swift */; };
+		2D9B484723F350AF00A91A9C /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B484623F350AF00A91A9C /* PlayerData.swift */; };
 		2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD329223D7C0B70033011E /* AppDelegate.swift */; };
-		2DDD329523D7C0B70033011E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD329423D7C0B70033011E /* GameScene.sks */; };
 		2DDD329723D7C0B70033011E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD329623D7C0B70033011E /* Actions.sks */; };
 		2DDD329923D7C0B70033011E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD329823D7C0B70033011E /* GameScene.swift */; };
 		2DDD329B23D7C0B70033011E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD329A23D7C0B70033011E /* GameViewController.swift */; };
@@ -28,12 +29,14 @@
 		2DDD32C123D7C3B00033011E /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C023D7C3B00033011E /* leveldb-library.framework */; };
 		2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */; };
 		2DDD32CA23D7D5670033011E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD32C923D7D5670033011E /* GoogleService-Info.plist */; };
+		2DFF548623F6121D009C4332 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF548523F6121D009C4332 /* Ability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D9B484423F34A7600A91A9C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2D9B484623F350AF00A91A9C /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		2DDD328F23D7C0B70033011E /* LazyRiverExtreme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyRiverExtreme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDD329223D7C0B70033011E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2DDD329423D7C0B70033011E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2DDD329623D7C0B70033011E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2DDD329823D7C0B70033011E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2DDD329A23D7C0B70033011E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		2DDD32C523D7C7900033011E /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = ../../../../Downloads/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2DDD32C923D7D5670033011E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DFF548523F6121D009C4332 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,6 @@
 			children = (
 				2DDD32C923D7D5670033011E /* GoogleService-Info.plist */,
 				2DDD329223D7C0B70033011E /* AppDelegate.swift */,
-				2DDD329423D7C0B70033011E /* GameScene.sks */,
 				2DDD329623D7C0B70033011E /* Actions.sks */,
 				2DDD329823D7C0B70033011E /* GameScene.swift */,
 				2DDD329A23D7C0B70033011E /* GameViewController.swift */,
@@ -123,6 +126,9 @@
 				2DDD329F23D7C0B80033011E /* Assets.xcassets */,
 				2DDD32A123D7C0B80033011E /* LaunchScreen.storyboard */,
 				2DDD32A423D7C0B80033011E /* Info.plist */,
+				2D9B484423F34A7600A91A9C /* Player.swift */,
+				2D9B484623F350AF00A91A9C /* PlayerData.swift */,
+				2DFF548523F6121D009C4332 /* Ability.swift */,
 			);
 			path = LazyRiverExtreme;
 			sourceTree = "<group>";
@@ -195,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDD329E23D7C0B70033011E /* Main.storyboard in Resources */,
-				2DDD329523D7C0B70033011E /* GameScene.sks in Resources */,
 				2DDD32A023D7C0B80033011E /* Assets.xcassets in Resources */,
 				2DDD32A323D7C0B80033011E /* LaunchScreen.storyboard in Resources */,
 				2DDD329723D7C0B70033011E /* Actions.sks in Resources */,
@@ -210,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9B484523F34A7600A91A9C /* Player.swift in Sources */,
+				2D9B484723F350AF00A91A9C /* PlayerData.swift in Sources */,
 				2DDD329923D7C0B70033011E /* GameScene.swift in Sources */,
 				2DDD329B23D7C0B70033011E /* GameViewController.swift in Sources */,
+				2DFF548623F6121D009C4332 /* Ability.swift in Sources */,
 				2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
