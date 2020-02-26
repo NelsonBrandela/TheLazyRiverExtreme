@@ -8,73 +8,74 @@
 
 import Foundation
 
+enum ScoreName{
+   case Kills = 0, Distance, Time
+}
+
+struct Score{
+    var points: Float = 0
+    var scoreMultiplier: Float = 1.25
+    private var score: Float = 0
+    //Updates score and returns it
+    func GetScore() -> Float{
+        score = points * scoreMultiplier
+        return score
+    }
+}
+
 class ScoringSystem
 {
     //Core variables
-    var score: Int = 0
-    private var scoreMultiplier: Int = 1
+    var overallScore: Float = 0
+    //Point specific variables
+    private var killScore: Score = Score()
+    private var distScore: Score = Score()
+    private var timeScore: Score = Score()
     
-    //Point gain specific variables
-    var killScore: Int
-    var distanceScore: Int
-    var timeScore: Int
-    var pointsPerKill: Int
-    var pointsPerDistanceMetric: Int
-    var pointsPerTimeScale: Int
-    
-    init(startingScore: Int = 0,
-         pointsGainedPerKill: Int = 1,
-         pointsGainedPerDistanceMetric: Int = 1,
-         pointsGainedPerTimeScale: Int = 1)
+    init(startingScore: Float = 0)
     {
-        pointsPerKill = pointsGainedPerKill
-        pointsPerDistanceMetric = pointsGainedPerDistanceMetric
-        pointsPerTimeScale = pointsGainedPerTimeScale
+        score = startingScore
         
     }
     
-    //
-    func UpdateScore(killsAquired: Int, distanceTravelled: Int, roundTimeElapsed: Int){
-        UpdateKillScore(kills: killsAquired)
-        UpdateDistanceScore(distanceTravelled: distanceTravelled)
-        UpdateTimeScore(deltaTime: roundTimeElapsed)
-        
-        score = (killScore + distanceScore + timeScore) * scoreMultiplier
+    
+    private func UpdateScore(elapsedTime: Float){
+        overallScore += distScore.GetScore()/elapsedTime + killScore.GetScore() + timeScore.GetScore()
     }
     
-    private func UpdateKillScore(kills: Int){
-        //Do not use multiplier in this method
-        //Get kills made this round
-        
-        //Add to kill counter(If there isn't one in another class make one)
-        
-        //Multiply kills by pointsPerKill
-        killScore = kills * pointsPerKill
+    private func AddPoints(scoreName: ScoreName, points: Float){
+        switch scoreName{
+            case ScoreName.Kills:
+                killScore.points += points
+            case ScoreName.Distance:
+                distScore.points += points
+            case ScoreName.Time:
+                timeScore.points += points
+        default:
+           print("Failed to add points")
+        }
     }
     
-    private func UpdateDistanceScore(distanceTravelled: Int){
-        //Do not use multiplier in this method
-        //Get distance travelled this round
-        
-        //Add to distance counter(If there isn't one in another class make one)
-        
-        //Multiply distance by pointsPerDistanceMetric
-        distanceScore = distanceTravelled * pointsPerDistanceMetric
+    func GetScore(scoreName: ScoreName) -> Score?
+    {
+        switch scoreName{
+            case ScoreName.Kills:
+                return killScore
+            case ScoreName.Distance:
+                return distScore
+            case ScoreName.Time:
+                return timeScore
+        default:
+           print("Failed to retrieve requested score")
+            var fail: Score?
+            return fail
+        }
     }
     
-    private func UpdateTimeScore(deltaTime: Int){
-        //Do not use multiplier in this method
-        //Get delta time for this round
-        
-        //Multiply dt by pointsPerTimeScale
-        timeScore = deltaTime * pointsPerTimeScale;
+    func SetMultiplierForAll(newValue: Float){
+        killScore.scoreMultiplier = newValue
+        distScore.scoreMultiplier = newValue
+        timeScore.scoreMultiplier = newValue
     }
     
-    func SetScoreMultiplier(newValue: Int){
-        scoreMultiplier = newValue
-    }
-    
-    func GetScoreMultiplier()->Int{
-        return scoreMultiplier
-    }
 }
