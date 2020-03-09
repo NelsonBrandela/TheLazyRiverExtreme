@@ -28,6 +28,7 @@
 		2DDD32C123D7C3B00033011E /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C023D7C3B00033011E /* leveldb-library.framework */; };
 		2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */; };
 		2DDD32CA23D7D5670033011E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD32C923D7D5670033011E /* GoogleService-Info.plist */; };
+		8A4828C42416DF5E000D2E54 /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4828C32416DF5E000D2E54 /* AssetLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		2DDD32C523D7C7900033011E /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		2DDD32C723D7CDE00033011E /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = ../../../../Downloads/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		2DDD32C923D7D5670033011E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A4828C32416DF5E000D2E54 /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				2DDD329F23D7C0B80033011E /* Assets.xcassets */,
 				2DDD32A123D7C0B80033011E /* LaunchScreen.storyboard */,
 				2DDD32A423D7C0B80033011E /* Info.plist */,
+				8A4828C32416DF5E000D2E54 /* AssetLoader.swift */,
 			);
 			path = LazyRiverExtreme;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				2DDD329923D7C0B70033011E /* GameScene.swift in Sources */,
 				2DDD329B23D7C0B70033011E /* GameViewController.swift in Sources */,
 				2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */,
+				8A4828C42416DF5E000D2E54 /* AssetLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
+				USER_HEADER_SEARCH_PATHS = /Users/n01245482/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Debug;
 		};
@@ -408,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
+				USER_HEADER_SEARCH_PATHS = /Users/n01245482/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Release;
 		};
