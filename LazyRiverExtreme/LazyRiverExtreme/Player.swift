@@ -24,6 +24,14 @@ class Player {
     init(start: CGPoint, end: CGPoint){
         let texture = SKTexture(imageNamed: "zombie1")
         sprite = SKSpriteNode(texture: texture, color:.clear, size:texture.size())
+        sprite.physicsBody = SKPhysicsBody(circleOfRadius: (sprite.texture?.size().width ?? 200)/2)
+        sprite.physicsBody?.affectedByGravity = false;
+        sprite.physicsBody?.allowsRotation = false;
+        sprite.physicsBody?.collisionBitMask = 1;
+        sprite.physicsBody?.contactTestBitMask = 1;
+        sprite.physicsBody?.categoryBitMask = 0;
+        sprite.physicsBody?.restitution = 1
+        sprite.name = "Player"
         health = 100.0
         speed = 1.0
         animationNames = [String]()
@@ -100,5 +108,9 @@ class Player {
     
     func ability2(scene: SKScene){
         
+    }
+    
+    deinit {
+        print("Destroying instance of Player")
     }
 }
