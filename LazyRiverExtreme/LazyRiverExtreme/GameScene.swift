@@ -8,11 +8,14 @@
 
 import SpriteKit
 import GameplayKit
-
+import Firebase
 class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    
+
+
     
     override func didMove(to view: SKView) {
         

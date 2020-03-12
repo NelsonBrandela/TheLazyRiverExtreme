@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 import UIKit
 
-let storage = Storage.storage().reference(withPath: "images")
+//let storage = Storage.storage().reference(withPath: "images")
 //let storageRef = storage.reference()
 
 
@@ -24,7 +24,7 @@ var ref : DatabaseReference!
 
 //let charSetRef = charSet1.parent()?.child("CharacterSet1.jpg")
 
-let metaDataJPG = StorageMetadata()
+//let metaDataJPG = StorageMetadata()
 
 var img : UIImageView?
 //https://www.letsbuildthatapp.com/course_video?id=58
