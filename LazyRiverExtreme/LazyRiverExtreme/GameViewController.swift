@@ -10,12 +10,12 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import Firebase
-import FirebaseAuth
+//import FirebaseAuth
 import FirebaseStorage
 class GameViewController: UIViewController {
- var handle :NSObjectProtocol = Auth.auth().addStateDidChangeListener { (auth, user) in
+ /*var handle :NSObjectProtocol = Auth.auth().addStateDidChangeListener { (auth, user) in
    // ...
- }
+ }*/
     override func viewDidLoad() {
 
 
@@ -35,7 +35,7 @@ class GameViewController: UIViewController {
                         
                     }
                 }*/
-                if Auth.auth().currentUser == nil {
+              /*  if Auth.auth().currentUser == nil {
                       Auth.auth().signInAnonymously(completion: { (user , error) in
                           if let error = error {
                            let error = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
@@ -45,7 +45,7 @@ class GameViewController: UIViewController {
                               self.present(alert, animated: true, completion: nil)*/
                           }
                       })
-                  }
+                  }*/
                   //end
                   
                   let storageRef = Storage.storage().reference(withPath: imgInfo)
@@ -89,7 +89,7 @@ class GameViewController: UIViewController {
         return true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+   /* override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
           // ...
         }
@@ -98,5 +98,5 @@ class GameViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(handle)
-    }
+    }*/
 }
