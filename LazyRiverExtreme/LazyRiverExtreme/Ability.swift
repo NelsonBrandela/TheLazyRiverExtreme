@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class Ability{
     var spriteImages : [String]
@@ -15,4 +16,5 @@ class Ability{
         spriteImages = sprites
         abilityID = ID
     }
+    func activate(scene: SKScene, player: Player){}
 }
