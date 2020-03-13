@@ -417,7 +417,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
+				USER_HEADER_SEARCH_PATHS = /Users/n01245482/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Debug;
 		};
@@ -440,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = /Users/n01225286/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
+				USER_HEADER_SEARCH_PATHS = /Users/n01245482/Documents/GitHub/TheLazyRiverExtreme/LazyRiverExtreme/;
 			};
 			name = Release;
 		};
