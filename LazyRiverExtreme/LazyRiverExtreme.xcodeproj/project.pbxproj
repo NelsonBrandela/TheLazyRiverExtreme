@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2D9B484523F34A7600A91A9C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B484423F34A7600A91A9C /* Player.swift */; };
 		2D9B484723F350AF00A91A9C /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B484623F350AF00A91A9C /* PlayerData.swift */; };
+		2DB3605B241AE2FC004BFC88 /* EnemyBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3605A241AE2FC004BFC88 /* EnemyBase.swift */; };
+		2DB3605D241AE589004BFC88 /* ChargerEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3605C241AE589004BFC88 /* ChargerEnemy.swift */; };
+		2DB3605F241B057A004BFC88 /* ColliderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3605E241B057A004BFC88 /* ColliderProtocol.swift */; };
+		2DB36061241B0808004BFC88 /* ProjectileAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB36060241B0808004BFC88 /* ProjectileAbility.swift */; };
+		2DB36063241B0B7F004BFC88 /* HealingAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB36062241B0B7F004BFC88 /* HealingAbility.swift */; };
 		2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD329223D7C0B70033011E /* AppDelegate.swift */; };
 		2DDD329723D7C0B70033011E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD329623D7C0B70033011E /* Actions.sks */; };
 		2DDD329923D7C0B70033011E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD329823D7C0B70033011E /* GameScene.swift */; };
@@ -35,6 +40,11 @@
 /* Begin PBXFileReference section */
 		2D9B484423F34A7600A91A9C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2D9B484623F350AF00A91A9C /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		2DB3605A241AE2FC004BFC88 /* EnemyBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyBase.swift; sourceTree = "<group>"; };
+		2DB3605C241AE589004BFC88 /* ChargerEnemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerEnemy.swift; sourceTree = "<group>"; };
+		2DB3605E241B057A004BFC88 /* ColliderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderProtocol.swift; sourceTree = "<group>"; };
+		2DB36060241B0808004BFC88 /* ProjectileAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileAbility.swift; sourceTree = "<group>"; };
+		2DB36062241B0B7F004BFC88 /* HealingAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingAbility.swift; sourceTree = "<group>"; };
 		2DDD328F23D7C0B70033011E /* LazyRiverExtreme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyRiverExtreme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDD329223D7C0B70033011E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDD329623D7C0B70033011E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -129,6 +139,11 @@
 				2D9B484423F34A7600A91A9C /* Player.swift */,
 				2D9B484623F350AF00A91A9C /* PlayerData.swift */,
 				2DFF548523F6121D009C4332 /* Ability.swift */,
+				2DB3605A241AE2FC004BFC88 /* EnemyBase.swift */,
+				2DB3605C241AE589004BFC88 /* ChargerEnemy.swift */,
+				2DB3605E241B057A004BFC88 /* ColliderProtocol.swift */,
+				2DB36060241B0808004BFC88 /* ProjectileAbility.swift */,
+				2DB36062241B0B7F004BFC88 /* HealingAbility.swift */,
 			);
 			path = LazyRiverExtreme;
 			sourceTree = "<group>";
@@ -215,12 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB36061241B0808004BFC88 /* ProjectileAbility.swift in Sources */,
 				2D9B484523F34A7600A91A9C /* Player.swift in Sources */,
 				2D9B484723F350AF00A91A9C /* PlayerData.swift in Sources */,
 				2DDD329923D7C0B70033011E /* GameScene.swift in Sources */,
+				2DB36063241B0B7F004BFC88 /* HealingAbility.swift in Sources */,
 				2DDD329B23D7C0B70033011E /* GameViewController.swift in Sources */,
 				2DFF548623F6121D009C4332 /* Ability.swift in Sources */,
+				2DB3605B241AE2FC004BFC88 /* EnemyBase.swift in Sources */,
 				2DDD329323D7C0B70033011E /* AppDelegate.swift in Sources */,
+				2DB3605F241B057A004BFC88 /* ColliderProtocol.swift in Sources */,
+				2DB3605D241AE589004BFC88 /* ChargerEnemy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
