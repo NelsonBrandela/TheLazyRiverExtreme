@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
    // ...
  }*/
      var myImg:UIImage?
-    var charSet1Img: UIImage?
+     var charSet1Img: UIImage?
      var charSet2Img: UIImage?
      var charSet3Img: UIImage?
     
