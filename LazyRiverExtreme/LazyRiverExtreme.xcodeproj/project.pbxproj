@@ -34,6 +34,8 @@
 		625A7AAD23F9B5F80028F55C /* ScoringSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */; };
 		8A4BF310241C185C00A4EE90 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4BF30E241C185C00A4EE90 /* FirebaseStorage.framework */; };
 		8A4BF311241C185C00A4EE90 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4BF30F241C185C00A4EE90 /* GTMSessionFetcher.framework */; };
+		8A4BF314241C198600A4EE90 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4BF312241C198600A4EE90 /* FirebaseAuth.framework */; };
+		8A4BF315241C198600A4EE90 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4BF313241C198600A4EE90 /* GTMSessionFetcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +83,8 @@
 		625A7AAC23F9B5F80028F55C /* ScoringSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystem.swift; sourceTree = "<group>"; };
 		8A4BF30E241C185C00A4EE90 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = ../../../../Desktop/Firebase/FirebaseStorage/FirebaseStorage.framework; sourceTree = "<group>"; };
 		8A4BF30F241C185C00A4EE90 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = ../../../../Desktop/Firebase/FirebaseStorage/GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		8A4BF312241C198600A4EE90 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = ../../../../Desktop/Firebase/FirebaseAuth/FirebaseAuth.framework; sourceTree = "<group>"; };
+		8A4BF313241C198600A4EE90 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = ../../../../Desktop/Firebase/FirebaseAuth/GTMSessionFetcher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				2DDD32B123D7C2F80033011E /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				2DDD32C823D7CDE00033011E /* FirebaseAnalytics.framework in Frameworks */,
 				2DDD32BB23D7C3290033011E /* GoogleUtilities.framework in Frameworks */,
+				8A4BF315241C198600A4EE90 /* GTMSessionFetcher.framework in Frameworks */,
 				2DDD32BD23D7C3300033011E /* nanopb.framework in Frameworks */,
 				2DDD32B523D7C3170033011E /* GoogleAppMeasurement.framework in Frameworks */,
 				2DDD32C123D7C3B00033011E /* leveldb-library.framework in Frameworks */,
@@ -100,6 +105,7 @@
 				2DDD32AB23D7C2D60033011E /* FIRAnalyticsConnector.framework in Frameworks */,
 				2DDD32BF23D7C3AA0033011E /* FirebaseDatabase.framework in Frameworks */,
 				2DDD32B923D7C3230033011E /* GoogleDataTransportCCTSupport.framework in Frameworks */,
+				8A4BF314241C198600A4EE90 /* FirebaseAuth.framework in Frameworks */,
 				8A4BF311241C185C00A4EE90 /* GTMSessionFetcher.framework in Frameworks */,
 				8A4BF310241C185C00A4EE90 /* FirebaseStorage.framework in Frameworks */,
 			);
@@ -121,6 +127,8 @@
 		2DDD328623D7C0B70033011E = {
 			isa = PBXGroup;
 			children = (
+				8A4BF312241C198600A4EE90 /* FirebaseAuth.framework */,
+				8A4BF313241C198600A4EE90 /* GTMSessionFetcher.framework */,
 				8A4BF30E241C185C00A4EE90 /* FirebaseStorage.framework */,
 				8A4BF30F241C185C00A4EE90 /* GTMSessionFetcher.framework */,
 				2D5ACA7723FCB148001F9A50 /* PlayerClasses */,
