@@ -13,7 +13,9 @@ import Firebase
 import FirebaseAuth
 import FirebaseStorage
 class GameViewController: UIViewController {
-
+ var handle :NSObjectProtocol = Auth.auth().addStateDidChangeListener { (auth, user) in
+   // ...
+ }
     override func viewDidLoad() {
 
 
@@ -26,16 +28,24 @@ class GameViewController: UIViewController {
                   print(imgInfo)
                   
                   //start
-                /* if Auth.auth().currentUser == nil {
-                      Auth.auth().signInAnonymously(completion: { (user: User?, error: Error?) in
+               /* if Auth.auth().currentUser == nil
+                {
+                    Auth.auth().signInAnonymously(completion:{(user, error) in
+                        
+                        
+                    }
+                }*/
+                if Auth.auth().currentUser == nil {
+                      Auth.auth().signInAnonymously(completion: { (user , error) in
                           if let error = error {
-                              let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                              let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                           let error = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                            
+                            /*let ok = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                               alert.addAction(ok)
-                              self.present(alert, animated: true, completion: nil)
+                              self.present(alert, animated: true, completion: nil)*/
                           }
                       })
-                  }*/
+                  }
                   //end
                   
                   let storageRef = Storage.storage().reference(withPath: imgInfo)
@@ -77,5 +87,16 @@ class GameViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle)
     }
 }
