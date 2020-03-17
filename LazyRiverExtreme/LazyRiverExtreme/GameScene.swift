@@ -12,7 +12,8 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate{
     
     let player = Player(start: CGPoint(x: 0.0, y: 0.0), end: CGPoint(x: 0.0, y: 0.0))
-    
+    var held = false;
+    let enemy = ChargerEnemy(start: CGPoint(x: 0, y:0), time: 0.0)
     
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
@@ -26,15 +27,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         addChild(background)
         addChild(player.sprite)
         player.sprite.zPosition = 1
-        var splinePoints = [CGPoint(x: 0, y: 0),
-                            CGPoint(x: size.width, y: 0)]
+        enemy.sprite.position = CGPoint(x: size.width - 200, y:size.height/2)
+        addChild(enemy.sprite)
+        enemy.sprite.zPosition = 1
+        var splinePoints = [CGPoint(x: 0, y: 200),
+                            CGPoint(x: size.width, y: 200)]
         let ground = SKShapeNode(splinePoints: &splinePoints, count: splinePoints.count)
         addChild(ground)
         ground.physicsBody = SKPhysicsBody(edgeChainFrom: ground.path!)
         ground.physicsBody?.categoryBitMask = 1
         ground.physicsBody?.contactTestBitMask = 1
-        var splinePoints2 = [CGPoint(x: 0, y: size.height),
-                            CGPoint(x: size.width, y: size.height)]
+        var splinePoints2 = [CGPoint(x: 0, y: size.height - 200),
+                            CGPoint(x: size.width, y: size.height - 200)]
         let ground2 = SKShapeNode(splinePoints: &splinePoints2, count: splinePoints2.count)
         addChild(ground2)
         ground2.physicsBody = SKPhysicsBody(edgeChainFrom: ground2.path!)
@@ -48,12 +52,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
                 if((touchLoc.y < (player.sprite.position.y + 50)) && (touchLoc.y > (player.sprite.position.y - 50))){
                     player.ability1(scene: self)
                 }else{
+                    held = true
                     //player.move()
-                    player.sprite.physicsBody?.velocity.dy = 1000
+                    //player.sprite.physicsBody?.velocity.dy = 1000
                 }
             }else{
-                player.sprite.physicsBody?.velocity.dy = 1000
+                //player.sprite.physicsBody?.velocity.dy = 1000
                 //player.move()
+                held = true
             }
         }
     }
@@ -63,6 +69,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         //player.resetPosition()
+        held = false
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -71,13 +78,38 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        if(held){
+            player.move()
+        }else{
+            player.resetPosition()
+        }
     }
     func didBegin(_ contact: SKPhysicsContact) {
         if contact.bodyA.node?.name == "Player" {
-            contact.bodyA.node?.removeFromParent()
+            if contact.bodyB.node?.name == "Charger"{
+                player.tookDamage(amount: Float(enemy.Collide()))
+            }
+            //contact.bodyA.node?.removeFromParent()
         }
         if contact.bodyB.node?.name == "Player"{
-            contact.bodyB.node?.removeFromParent()
+            if contact.bodyA.node?.name == "Charger"{
+            //contact.bodyB.node?.removeFromParent()
+                player.tookDamage(amount: Float(enemy.Collide()))
+            }
+        }
+        
+        if contact.bodyA.node?.name == "Charger"{
+            if contact.bodyB.node?.name == "cat"{
+                contact.bodyA.node?.removeFromParent()
+                contact.bodyB.node?.removeFromParent()
+            }
+        }
+        
+        if contact.bodyB.node?.name == "Charger"{
+            if contact.bodyA.node?.name == "cat"{
+                contact.bodyA.node?.removeFromParent()
+                contact.bodyB.node?.removeFromParent()
+            }
         }
     }
 }
